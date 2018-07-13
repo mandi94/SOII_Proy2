@@ -8,9 +8,13 @@
 
  public class ConectServer{
 
+    private int port;
      
+    public ConectServer(int port){
+        this.port=port;
+    }
 
-
+    
 
 
 
