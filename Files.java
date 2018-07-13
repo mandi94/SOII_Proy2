@@ -96,4 +96,16 @@ import java.util.Date;
         return null;
     }
 
+    public static void main(String[] args) {
+        System.out.println("Archivo a abrir: " +args[0]);
+        Files f = new Files(args[0]);
+        System.out.println(f.getFileName());
+        System.out.println(f.getFilePath());
+        System.out.println("\u001B[31m"+f.getFileName()+"no existe.");
+        System.out.print("\u001B[0m");
+        if (f != null)  {
+            System.out.println(f.toString());
+        }
+    }
+
 }
