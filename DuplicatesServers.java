@@ -1,3 +1,5 @@
+import java.rmi.RemoteException;
+
 /**
 * 
 *
@@ -6,8 +8,13 @@
 *               Benjamin Amos <benjamin.oxi@gmail.com>
 */
 
-public class DuplicatesServers{
+public class DuplicatesServers extends Thread{
+
     
+
+
+
+
     
 
 }

@@ -15,13 +15,13 @@ public class ClientImp extends
             java.rmi.server.UnicastRemoteObject
         implements ClientOperations {   
     
-    private Repo newRepo;
+    private Repo newRepo; // esta es la copia que se manda a commitear
     private ServerOperations operatiosServerToServer;
     private int replicates;
 
 
 
-    public ClientImp(ServerOperations newServerOperation) throws java.rmi.RemoteException{
+    public ClientImp(ServerOperations newServerOperation) throws RemoteException{
         super();
         repoTemp= new Repo();
         this.operatiosServerToServer= newServerOperation;

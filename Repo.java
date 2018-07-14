@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 import java.util.Date;
 
 /**
@@ -22,6 +23,7 @@ import java.util.Date;
     private Date lastModify;
 
     /* Maybe necesary use a stack of versions, diferents states the repository*/
+    //private Deque<Integer> versionHistory;
 
     /**
 	 * Constructs a Repository object.
